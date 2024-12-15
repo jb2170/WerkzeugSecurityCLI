@@ -10,7 +10,7 @@ dependencies = ["Werkzeug"]
 Homepage = "https://github.com/jb2170/WerkzeugSecurityCLI/"
 
 [project.scripts]
-wzcli = "WerkzeugSecurityCLI:main"
+wzscli = "WerkzeugSecurityCLI:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "WerkzeugSecurityCLI.__version__"}
