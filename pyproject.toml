@@ -1,0 +1,20 @@
+[project]
+name = "WerkzeugSecurityCLI"
+dynamic = ["version"]
+description = "Generate and check werkzeug.security password hashes on the command line"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = ["Werkzeug"]
+
+[project.urls]
+Homepage = "https://github.com/jb2170/WerkzeugSecurityCLI/"
+
+[project.scripts]
+wzcli = "WerkzeugSecurityCLI:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "WerkzeugSecurityCLI.__version__"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
